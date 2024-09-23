@@ -1,0 +1,8 @@
+version:
+sources:
+ - name: stripe_src
+   description: stripe schema raw tables
+   database: raw_dbt_ltim
+   schema: stripe
+   tables:
+    - name: payment

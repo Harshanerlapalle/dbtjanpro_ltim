@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+ - name: jaffle_shop_src
+   database: raw_dbt_ltim
+   schema: jaffle_shop
+   description: jaffle shop schema raw tables
+   tables:
+    - name: customers
+      columns:
+        - name: id
+          tests:
+            - unique
+            - not_null
+    - name: orders
+      columns:
+        - name: id
+          tests:
+            - unique
+            - not_null
+    - name: emp
+      columns:
+        - name: id
+          tests:
+            - unique
+            - not_null
+          

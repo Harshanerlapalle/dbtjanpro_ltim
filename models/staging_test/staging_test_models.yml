@@ -1,0 +1,9 @@
+version: 2
+models:
+ - name: stg_customers_test
+   description: testing stg_customers_test model
+   columns:
+    - name: cutid
+      tests:
+       - unique
+       - not_null

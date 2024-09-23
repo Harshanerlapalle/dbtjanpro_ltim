@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: sch2_scr
+    database: db2
+    description: source of customer table
+    schema: sch2
+    tables:
+      - name: customer_test
+        columns:
+         - name: cutid
+           tests:
+             - unique
+             - not_null
